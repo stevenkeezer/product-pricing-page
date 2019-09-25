@@ -1,11 +1,15 @@
 body {
-  background-color: #D44340;
+  /* background-color: #D44340; */
   font-family: "Avenir Next" !important;
+}
+a:hover {
+  color: #D44340!important;
 }
 
 section {
   padding: 25px;
-  min-height: 800px;
+  min-height: 400px;
+  height: auto;
   background-color: white;
 }
 
@@ -33,6 +37,10 @@ a{
   padding-right: 20px;
 }
 
+h1 {
+  font-size: 80px
+}
+
 h1, h2, h3, h4{
   text-align: center;
 }
@@ -52,6 +60,8 @@ h1{
 .btn:hover {
   border: grey;
   background-color: #D44340!important;
+  outline: none!important;
+
 }
 .jumbotron-description {
   text-align: center;
@@ -193,8 +203,34 @@ justify-items: row
   flex-direction: column */
 }
 
+.fab:hover {
+  color: #D44340;
+}
 .form-group {
   margin-right: 20px;
   margin-left: 20px;
 
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%
+}
+
+.col-3 {
+display: flex;
+justify-content: space-around;
+/* flex-direction: column */
+}
+
+
+@media screen and (max-width: 600px) {
+  .jumbotron-description {
+    text-align: center;
+    max-width: 70vw;
+  }
+  h1 {
+    font-size: 40px
+  }
 }
